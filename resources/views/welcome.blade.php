@@ -13,6 +13,8 @@
 <div class="container m-4">
 <div class="card">
   <div class="card-body">
+
+  <a href="{{route('users.index')}}" class="btn btn-info m-3">Add</a>
   <table class="table table-success table-striped">
   <thead>
     <tr>
@@ -28,7 +30,7 @@
       <td>Mark</td>
       <td>Otto</td>
       <td>
-         <a href="{{route('users.index')}}" class="btn btn-info">Create</a>
+
           <a href="" class="btn btn-danger">Delete</a>
       </td>
     </tr>
@@ -37,7 +39,7 @@
       <td>Mark</td>
       <td>Otto</td>
       <td>
-           <a href="" class="btn btn-info">Create</a>
+           
           <a href="" class="btn btn-danger">Delete</a>
       </td>
     </tr>
@@ -46,7 +48,7 @@
       <td>Mark</td>
       <td>Otto</td>
       <td>
-          <a href="" class="btn btn-info">Create</a>
+       
           <a href="" class="btn btn-danger">Delete</a>
       </td>
     </tr>

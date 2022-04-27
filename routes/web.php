@@ -14,8 +14,6 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
+Route::get('list', [UserController::class, 'list'])->name('users.list');
 Route::get('users', [UserController::class, 'index'])->name('users.index');
