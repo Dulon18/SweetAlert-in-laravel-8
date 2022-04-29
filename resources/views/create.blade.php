@@ -25,13 +25,22 @@
       <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
     </div>
    
-    <button type="submit" class="btn btn-primary">Create</button>
+    <button type="submit" class="btn btn-primary myBtn">Create</button>
     <a href="{{route('users.list')}}" class="btn btn-danger">Back</a>
   </form>
 
     </div>
   </div>
 </div>
+<script src="https://unpkg.com/sweetalert2@7.18.0/dist/sweetalert2.all.js"></script>
+<script>
+  
+  Swal.fire(
+  'Good job!',
+  'You clicked the button!',
+  'success'
+)
 
+</script>
 </body>
 </html>

@@ -27,7 +27,7 @@ class UserController extends Controller
         'email'=>$request->email,
         
     ]);
-
+    alert('You clicked the button!');
     return redirect()->back();
     }
 }
