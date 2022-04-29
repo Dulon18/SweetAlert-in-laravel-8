@@ -14,7 +14,8 @@
   <h2 class="text-center">User info form</h2>
   <div class="card bg-info">
     <div class="card-body">
-    <form action="/action_page.php">
+    <form action="{{route('users.store')}}" method="POST">
+      @csrf
     <div class="mb-3 mt-3">
       <label for="email">Name:</label>
       <input type="text" class="form-control" id="email" placeholder="Enter name" name="name">
@@ -23,10 +24,7 @@
       <label for="email">Email:</label>
       <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
     </div>
-    <div class="mb-3">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-    </div>
+   
     <button type="submit" class="btn btn-primary">Create</button>
     <a href="{{route('users.list')}}" class="btn btn-danger">Back</a>
   </form>

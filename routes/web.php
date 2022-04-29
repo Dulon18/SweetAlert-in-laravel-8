@@ -17,3 +17,4 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', [UserController::class, 'list'])->name('users.list');
 Route::get('users', [UserController::class, 'index'])->name('users.index');
+Route::post('/store', [UserController::class, 'store'])->name('users.store');
